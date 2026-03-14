@@ -28,7 +28,7 @@ namespace PayrollAssessment.Repositories.Employee
 
         public async Task<EmployeeInfo?> UpdateAsync(EmployeeInfo employee)
         {
-            var existing = await _context.Employees
+            EmployeeInfo? existing = await _context.Employees
                 .FirstOrDefaultAsync(e => e.EmployeeNumber == employee.EmployeeNumber);
             if (existing == null) return null;
 
@@ -45,7 +45,7 @@ namespace PayrollAssessment.Repositories.Employee
 
         public async Task<bool> DeleteAsync(string employeeNumber)
         {
-            var employee = await _context.Employees
+            EmployeeInfo? employee = await _context.Employees
                 .FirstOrDefaultAsync(e => e.EmployeeNumber == employeeNumber);
             if (employee == null) return false;
 
