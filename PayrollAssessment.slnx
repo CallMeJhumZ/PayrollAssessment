@@ -1,0 +1,7 @@
+<Solution>
+  <Project Path="PayrollAssessment.API/PayrollAssessment.API.csproj" />
+  <Project Path="PayrollAssessment.BusinessModels/PayrollAssessment.BusinessModels.csproj" />
+  <Project Path="PayrollAssessment.DataModels/PayrollAssessment.DataModels.csproj" />
+  <Project Path="PayrollAssessment.Repositories/PayrollAssessment.Repositories.csproj" />
+  <Project Path="PayrollAssessment.Services/PayrollAssessment.Services.csproj" />
+</Solution>
